@@ -1,0 +1,44 @@
+html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.roles {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 5px 0 5px 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media (max-width: 730px) {
+  .roles {
+    width: 90%;
+  }
+}
