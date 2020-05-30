@@ -4,21 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rôles - Loup-Garou - Loups</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/loups.css">
   </head>
   <body>
+    <header class="pcheader">
+      <button class="mdc-button mdc-button--raised mdc-theme--primary-bg" onclick="document.location.href='index.html'">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">home</i>
+        <span class="mdc-button__label">Retour</span>
+      </button>
+    </header>
+    <header class="mobileheader">
+      <button class="mdc-fab" aria-label="Retour" onclick="document.location.href='index.html'">
+        <div class="mdc-fab__ripple"></div>
+        <span class="mdc-fab__icon material-icons">home</span>
+      </button>
+    </header>
+    <nav>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#grand-mechant-loup">Grand Méchant Loup</a></li>
+        <li><a href="#loup-garou">Loup-Garou</a></li>
+        <li><a href="#loup-noir">Loup-Garou noir</a></li>
+        <li><a href="#loup-blanc">Loup-garou blanc</a></li>
+      </ul>
+    </nav>
     <h1>Rôles - Loup Garou</h1>
     <h2>Loups</h2>
     <div class="roles">
-      <div class="role">
+      <div class="role" id="grand-mechant-loup">
         <img src="https://lh5.googleusercontent.com/wRbF0fnDuKEWdSc99FCZUtbe3POhMhenOh_5iOSFSo0OaUGbSU9jgo4k0Db9YAjUXBJCe8oQ-V7_wMnImSYSiPZUY6w7vebSWaFB491v7-axPuiVNLBXCk_Mx0Jh0m1GfWIyy_VJ=s800">
         <h3>Grand Méchant Loup</h3>
         <p>Chaque nuit, tu te réunis avec tes compères pour décider d’une victime à éliminer. Tant qu’aucun loup n’est mort, tu peux, chaque nuit, dévorer une victime supplémentaire.</p>
       </div>
-      <div class="role">
+      <div class="role" id="loup-garou">
         <img src="https://lh6.googleusercontent.com/i5pXV7aAEnCPFH5XCtMAkrdq5qnSGLVEW8fHPv-ivgpNU-TjCXNXdFdGr8YuN9MktDbL9X1aM3_m0XyN08Haskecvn_Z24qEGH5DO6fiAuCaiKl1yYa-0_LDuzaI0HGaDwA98zGh=s800">
         <h3>Loup-Garou</h3>
         <p>Chaque nuit, tu te réunis avec tes compères pour décider d’une victime à éliminer.</p>
+      </div>
+      <div class="role" id="loup-noir">
+        <img src="https://lh3.googleusercontent.com/OhzI7rhF10uyvroVczTa66mCVgVdyyiDirmxouCCpNdtCfwjFcKyWLi0RMErbwNfxD-ZYjgndazEyPigQP7ZxlG8UFhhOh5lF_ISrc5o6A1GrMJDvC_JP0kgcylN6Apdiu-OvdWP=s800">
+        <h3>Loup-Garou noir</h3>
+        <p>Chaque nuit, tu te réunis avec tes compères pour décider d’une victime à éliminer. Une fois dans la partie, tu peux transformer la personne désignée en loup. L’infecté conserve ses pouvoirs mais gagne désormais avec les loups.</p>
+      </div>
+      <div class="role" id="loup-blanc">
+        <img src="https://lh3.googleusercontent.com/mhHAljblq7iApcpDjYLeTIMLYa2j7EOvsdRJL_QD-F0nm7lT8E_ycFeU18XsYZD4EmIB8JgV8nm4vNIWmiqwihUXhoGsLRB1vJmWd0wsCkfUYqwyM4LLHDEfNHykUr_euJu5GGyZ=s800">
+        <h3>Loup-garou blanc</h3>
+        <p>Tu gagnes seul. Chaque nuit, tu te réunis avec tes compères pour décider d’une victime à éliminer. Les loups croient que tu es un loup normal, mais une nuit sur deux, tu peux assassiner l’un d’eux au choix.</p>
       </div>
     </div>
   </body>
